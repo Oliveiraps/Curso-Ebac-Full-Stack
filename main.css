@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Playwrite VN", 'Ubuntu', sans-serif;
+}
+
+body {
+    background-color: #3A2E39;
+    max-width: 500px;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px;
+}
+form {
+    padding: 20PX;
+}
+
+h1 {
+    font-family: 'Ubuntu', sans-serif;
+    color:#EDB183 ;
+    font-size: 50px;
+    text-align: center;
+}
+
+input {
+    font-family: "Playwrite VN", sans-serif;
+    font-size: bold;
+    font-weight: bold;
+    height: 40px;
+    border: 2px solid #F15152;
+    background-color: #333;
+    color: #F4D8CD;
+    outline: none;
+    width: 75%;
+}
+
+button {
+    font-family: 'Ubuntu';
+    font-size: bold;
+    border: none;
+    height: 41px;
+    width: 80px;
+    background-color: #1E555C;
+    color: #F4D8CD;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+button:hover {
+    background-color: #39a3b1;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+li {
+    background-color: #EDB183;
+    margin: 10px auto;
+    border-radius: 5px;
+    color: #3A2E39;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.completed {
+    text-decoration: line-through;
+    opacity: 0.7;
+    transition: 0.3s;
+}
