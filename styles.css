@@ -21,7 +21,7 @@ body {
     background-color: transparent;
     border: 2px solid rgba(255, 255, 255, .2);
     padding: 30px 40px;
-    color: #fff;
+    color: #333;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(7px);
@@ -50,7 +50,7 @@ input {
     background-color: transparent;
     border-radius: 4px;
     outline: none;
-    color: #333;
+    color: #fff;
 }
 
 
