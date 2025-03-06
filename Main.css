@@ -1,0 +1,89 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    /* Imagem de fundo com URL alternativa e cor de fallback */
+    background-color: #1a4a7c; /* Cor de fallback caso a imagem não carregue */
+    background-image: url('./images/Leonardo_Phoenix_10_Crie_uma_imagem_realista_em_alta_resoluo_d_1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+}
+
+/* Efeito de vidro (Glass effect) com fallback para navegadores que não suportam backdrop-filter */
+.glass-card {
+    background-color: rgba(255, 255, 255, 0.25);
+    backdrop-filter: blur(10px);
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+
+.form-control {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-header {
+    background-color: #204e4a;
+    color: white;
+    border-radius: 15px 15px 0 0;
+    padding: 15px;
+    text-align: center;
+}
+
+/* Efeito hover nos inputs */
+.form-control:hover, .form-control:focus {
+    background-color: rgba(255, 255, 255, 0.7);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+/* Estilo para o botão */
+.btn-enviar {
+    background: linear-gradient(to right, #2e933c, #81c14b);
+    border: none;
+    width: 100%;
+    padding: 10px;
+    transition: transform 0.3s;
+    color: #ccc;
+    font-weight: bold;
+}
+
+.btn-enviar:hover {
+    transform: scale(1.03);
+}
+
+/* Texto mais escuro para os labels */
+label {
+    color: #333;
+    font-weight: bold;
+}
+
+/* Reajustando alguns estilos após o reset */
+h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+p {
+    margin-bottom: 1rem;
+}
+
+.card-body {
+    line-height: 1.5;
+    padding: 20px;
+}
+
+/* Ajuste para garantir que elementos do formulário tenham espaçamento adequado */
+.mb-4 {
+    margin-bottom: 1.5rem;
+}
