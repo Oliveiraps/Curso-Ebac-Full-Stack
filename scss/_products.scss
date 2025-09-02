@@ -1,0 +1,74 @@
+@use "variables";
+@use "mixins";
+
+section {
+    padding: variables.$spacing-xxl 0;
+    background: linear-gradient(135deg,#0a0a0a 0%,#1a1a2e 50%, #16213e 100%);
+    min-height: 100vh;
+
+    h2 {
+        color: variables.$quantum-color;
+        margin-bottom: variables.$spacing-medium;
+        font-size: 2.5rem;
+        text-align: center;
+        text-shadow: 0 0 20px rgba(variables.$quantum-color, 0.5);
+        animation: glow 2s ease-in-out infinite alternate;
+    }
+}
+
+@keyframes glow {
+    from { text-shadow: 0 0 20px rgba(variables.$quantum-color, 0.5); }
+    to { text-shadow: 0 0 30px rgba(variables.$quantum-color, 0.8); }
+}
+
+.products {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    margin-top: 30px;
+
+    .product-item {
+        background: #fff;
+        border-radius: variables.$border-radius;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+        padding: 20px;
+        width: calc(25% - 30px);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+
+        img {
+            max-width: 100%;
+            border-radius: variables.$border-radius;
+            margin-bottom: 15px;
+        }
+
+        h4 {
+            margin-bottom: 10px;
+            color: variables.$primary-color;
+        }
+
+        p {
+            font-size: 15px;
+            margin-bottom: 15px;
+        }
+
+        .product-button {
+            @include mixins.button-style;
+            text-decoration: none;
+            display: inline-block;
+        }
+    }
+    @media (max-width: 900px) {
+        .product-item {
+            width: calc(50% - 30px);
+        }
+    }
+    @media (max-width: 600px) {
+        flex-direction: column;
+        .product-item {
+            width: 100%;
+        }
+    }
+}

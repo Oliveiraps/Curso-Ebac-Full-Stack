@@ -1,0 +1,22 @@
+@use "variables";
+
+@mixin button-style {
+    background: variables.$button-color;
+    color: #fff;
+    border: none;
+    border-radius: variables.$border-radius;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.2s;
+    &:hover {
+        background: #0077b6; // cor fixa para hover, compatível com todos compiladores
+    }
+}
+
+@mixin responsive {
+    @media (max-width: 768px) {
+        flex-direction: column;
+        align-items: center;
+    }
+}

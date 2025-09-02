@@ -1,0 +1,14 @@
+{
+  "version": 3,
+  "sourceRoot": "",
+  "sources": [
+    "../scss/_base.scss",
+    "../scss/_variables.scss",
+    "../scss/_header.scss",
+    "../scss/_mixins.scss",
+    "../scss/_products.scss"
+  ],
+  "names": [],
+  "mappings": "AAAA;EACI;EACA;EACA;;;AAGJ;EACI,aCOU;EDNV,YCNc;EDOd,OCQS;;;ADLb;EACI;EACA;EACA;;;AEfJ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;;ACOJ;EDVA;ICWI;IACA;;;ADLJ;EACI;;AAGJ;EACI;EACA;EACA;;AAEA;EACI;EACA;EACA;EACA;;AACA;EACI,ODTD;;;AGlBf;EACI;EACA;EACA;;AAEA;EACI,OHEQ;EGDR,eHwBS;EGvBT;EACA;EACA;EACA;;;AAIR;EACI;IAAO;;EACP;IAAK;;;AAGT;EACI;EACA;EACA;EACA;;AAEA;EACI;EACA,eHaQ;EGZR;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACI;EACA,eHEI;EGDJ;;AAGJ;EACI;EACA,OH5CI;;AG+CR;EACI;EACA;;AAGJ;EDpDJ,YFiBW;EEhBX;EACA;EACA,eFqCY;EEpCZ;EACA;EACA;EACA;EC+CQ;EACA;;AD/CR;EACI;;ACiDJ;EACI;IACI;;;AAGR;EA5CJ;IA6CQ;;EACA;IACI",
+  "file": "styles.css"
+}

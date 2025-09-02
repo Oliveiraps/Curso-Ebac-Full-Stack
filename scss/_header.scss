@@ -1,0 +1,35 @@
+@use "variables";
+@use "mixins";
+
+header {
+    background: variables.$primary-color;
+    color: #fff;
+    padding: 20px 0;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @include mixins.responsive;
+    }
+
+    .branding img {
+        height: 70px;
+    }
+
+    .menu {
+        list-style: none;
+        display: flex;
+        gap: 20px;
+
+        li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+            &:hover {
+                color: variables.$button-color;
+            }
+        }
+    }
+}
